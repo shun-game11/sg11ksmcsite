@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG11マイクラ鯖</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // 現在のURLが /index.html の場合のみリダイレクトを実行
+        if (window.location.pathname === "/index.html") {
+            window.location.replace("/");
+        }
+    </script>
+</head>
+<body>
+    <div class="background">
+        <h1 class="SGMK">shun_game11 minecraft工業鯖について</h1>
+        <p class="maintext">
+            shun_game11 minecraft工業鯖はshun_game11が自己満で作るサーバーです。
+        </p>
+        <p class="maintext2">
+            まあ自由にやってくつもりです。
+        </p>
+        <hr class="hr">
+
+        <h1 class="mod" id="toggleModList" style="cursor: pointer;">
+            <span class="arrow-icon">▶</span> 導入mod一覧
+        </h1>
+
+        <div id="modListContent" class="mod-list-content hidden">
+            <ul>
+                <li>AdditionalLanterns</li>
+                <li>ae2ct</li>
+                <li>ae2insertexportcard</li>
+                <li>appliedenergistics2</li>
+                <li>architecture</li>
+                <li>balm</li>
+                <li>cloth-config</li>
+                <li>cookingforblockheads</li>
+                <li>create</li>
+                <li>createaddition</li>
+                <li>enderio</li>
+                <li>fluxnetworks</li>
+                <li>glodium</li>
+                <li>gravestone</li>
+                <li>guideme</li>
+                <li>immersiveengineering</li>
+                <li>jei</li>
+                <li>journeymap</li>
+                <li>JustEnoughCalculation</li>
+                <li>mcjtlylib</li>
+                <li>Mekanism</li>
+                <li>MekanismGenerators</li>
+                <li>mekanism_extras</li>
+                <li>mekpipezfix</li>
+                <li>modernfix</li>
+                <li>oreexcavation</li>
+                <li>pipez</li>
+                <li>Powah</li>
+                <li>ProjectE</li>
+                <li>rftoolsbase</li>
+                <li>rftoolsbuilder</li>
+                <li>rftoolsdim</li>
+                <li>rftoolspower</li>
+                <li>rftoolsstorage</li>
+                <li>rftoolsutility</li>
+                <li>ScalableCatsForce</li>
+                <li>tacz</li>
+                <li>torchmaster</li>
+            </ul>
+        </div>
+
+        <div class="modpack-download-section"> <h2 class="mendoi">導入がめんどい？</h2>
+            <h2 class="jaa">じゃあ<a href="/download/SG11マイクラ鯖.mrpack">ここ</a>からmodpackをダウンロードしよう！</h2>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NlvGUA6SR5o?si=zJo5SBuD2nwGU4du" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr class="hr2">
+        <div class="nihongoka">
+            <h2>日本語化リソースパックの入れ方</h2>
+            <p>マイクラのメニューから設定を開く</p>
+            <p>リソースパックタブを開く</p>
+            <p>SG11鯖リソパ.zipを入れる</p>
+            <p>そしたら日本語に対応していないmodも日本語になってるはずです！</p>
+        </div>
+        <hr class="hr2">
+        <div class="SA">
+            <h2>サーバーへの入り方</h2>
+            <p><a href="https://forms.gle/X6jiwE15PZvkMwar6">https://forms.gle/X6jiwE15PZvkMwar6</a>でMCIDなどを入力してください。</p>
+        </div>
+        <footer class="footer">
+    <hr class="hr2">
+        <div class="footer-content">
+            <p>© 2025 shun_game11</p>
+            <p>
+                <a href="https://twitter.com/gameshun2" target="_blank">Twitter</a> |
+                <a href="https://www.youtube.com/@shun_game11" target="_blank">YouTube</a> |
+                <a href="/comesoon.html">shun_game11のHP</a>
+            </p>
+        </div>
+    </footer>
+        
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleModList');
+            const modListContent = document.getElementById('modListContent');
+            const arrowIcon = toggleButton.querySelector('.arrow-icon');
+
+            if (toggleButton && modListContent && arrowIcon) {
+                toggleButton.addEventListener('click', function() {
+                    modListContent.classList.toggle('hidden');
+                    arrowIcon.classList.toggle('rotated');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

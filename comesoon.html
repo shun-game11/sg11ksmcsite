@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coming soon...</title>
+    <script>
+        // 現在のURLが /comesoon.html の場合のみリダイレクトを実行
+        // 注: このリダイレクトは、/comesoon.html から /comesoon へ変更するものです。
+        // もし単にトップページへ戻る「戻る」ボタンが必要な場合は、このリダイレクトロジックは必要ないかもしれません。
+        if (window.location.pathname === "/comesoon.html") {
+            window.location.replace("/comesoon");
+        }
+
+        // ページが読み込まれた後に実行される関数
+        window.onload = function() {
+            // 戻るボタンを表示するまでの秒数
+            const displayDelaySeconds = 5; // 例: 5秒後に表示
+
+            setTimeout(() => {
+                // 戻るボタンを作成
+                const backButton = document.createElement('button');
+                backButton.textContent = '戻る';
+                backButton.style.cssText = `
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    margin-top: 30px; /* 見出しの下にスペースを空ける */
+                    cursor: pointer;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                `;
+
+                // ホバー時のスタイル変更
+                backButton.onmouseover = function() {
+                    this.style.backgroundColor = '#0056b3';
+                };
+                backButton.onmouseout = function() {
+                    this.style.backgroundColor = '#007bff';
+                };
+
+                // ボタンがクリックされたときの動作
+                backButton.onclick = function() {
+                    window.history.back(); // ブラウザの履歴を1つ戻る
+                };
+
+                // body要素にボタンを追加
+                document.body.appendChild(backButton);
+
+            }, displayDelaySeconds * 1000); // ミリ秒単位で指定するため * 1000
+        };
+    </script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* 要素を縦方向に並べるために追加 */
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+        }
+
+        .dots::after {
+            content: "";
+            animation: dots 1.5s steps(3, end) infinite;
+        }
+
+        @keyframes dots {
+            0% {content: "";}
+            25% { content: "."; }
+            50% { content: ".."; }
+            75% { content: "..."; }
+        }
+    </style>
+</head>
+<body>
+    <h1>coming soon<span class="dots"></span></h1>
+</body>
+</html>

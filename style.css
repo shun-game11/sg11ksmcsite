@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.SGMK {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.maintext {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.maintext2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.hr {
+    margin-top: 30px;
+    margin-left: 5%;   
+    margin-right: 5%;
+    height: 2px;
+    background-color: gray;
+    border: none;
+    width: 90%;
+}
+.mod {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.arrow-icon {
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+    transform: rotate(90deg);
+}
+
+.mod-list-content {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.mod-list-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.mod-list-content li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.mendoi {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.jaa {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.modpack-install {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.hr2 {
+    margin-top: 30px;
+    margin-left: 5%;   
+    margin-right: 5%;
+    height: 2px;
+    background-color: gray;
+    border: none;
+    width: 90%;
+}
+
+.video-container {
+  position: relative;
+  width: 40%; /* 幅を40%に変更 */
+  padding-bottom: 22.5%; /* 40%の幅に対して16:9のアスペクト比を保つ高さ */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nihongoka {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.SA {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.are {
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    margin-top: 10px;
+    padding: auto;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
